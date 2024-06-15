@@ -1,0 +1,31 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.pane {
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+.left-pane {
+  width: 50%;
+  border-right: 1px solid #ccc;
+}
+
+.right-pane {
+  width: 50%;
+}
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #bec0c2a2;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #2402e7;
+  cursor: not-allowed;
+}
