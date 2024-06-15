@@ -21,11 +21,20 @@ button {
   padding: 5px 10px;
   border: none;
   background-color: #bec0c2a2;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
+  border-radius: 2px;
 }
 
 button:disabled {
-  background-color: #2402e7;
+  background-color: #341eb3c2;
   cursor: not-allowed;
 }
+.emp-form{
+  width: 50%;
+  height: 50vh;
+  background-color: red;
+}
+  .emp-form h2{
+    text-align: center;
+  }
