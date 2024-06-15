@@ -24,6 +24,7 @@ const EmployeeForm = ({ addEmployee }) => {
     };
 
     return (
+    
         <form onSubmit={handleSubmit} className='emp-form'>
             <h2>Add Employee</h2>
             <input type="text" name="firstName" value={employee.firstName} onChange={handleChange} placeholder="First Name" required />
@@ -33,6 +34,8 @@ const EmployeeForm = ({ addEmployee }) => {
             <input type="text" name="phone" value={employee.phone} onChange={handleChange} placeholder="Phone" required />
             <button type="submit">Add Employee</button>
         </form>
+
+    
     );
 };
 

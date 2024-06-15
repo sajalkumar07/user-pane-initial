@@ -1,3 +1,7 @@
+body {
+ background-color: black;
+}
+
 .App {
   display: flex;
   height: 100vh;
@@ -16,6 +20,7 @@
 .right-pane {
   width: 50%;
 }
+
 button {
   margin: 5px;
   padding: 5px 10px;
@@ -23,18 +28,107 @@ button {
   background-color: #bec0c2a2;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  border-radius: 2px;
 }
 
 button:disabled {
   background-color: #341eb3c2;
   cursor: not-allowed;
 }
-.emp-form{
-  width: 50%;
-  height: 50vh;
-  background-color: red;
+
+.emp-form {
+  background: rgba(0, 0, 0, 0.89);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 300px;
+  text-align: center;
+  margin: 50px auto; 
 }
-  .emp-form h2{
-    text-align: center;
-  }
+
+.emp-form h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.emp-form input {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  outline: none;
+}
+
+.emp-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.emp-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emp-form button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*emp list side*/
+
+.employee-container {
+  background: rgba(0, 0, 0, 0.918);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+
+.employee-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-container li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.pagination {
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.pagination button:disabled {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+}

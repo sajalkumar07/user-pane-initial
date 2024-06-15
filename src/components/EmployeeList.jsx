@@ -16,14 +16,14 @@ const EmployeeList = ({ employees }) => {
     };
 
     return (
-        <div>
+        <div className="employee-container">
             <h2>Employee List</h2>
             <ul>
                 {currentEmployees.map(employee => (
                     <li key={employee.id}>{employee.firstName} {employee.lastName}</li>
                 ))}
             </ul>
-            <div>
+            <div className="pagination">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
                         key={index + 1}
