@@ -18,11 +18,28 @@ const EmployeeList = ({ employees }) => {
     return (
         <div className="employee-container">
             <h2>Employee List</h2>
-            <ul>
-                {currentEmployees.map(employee => (
-                    <li key={employee.id}>{employee.firstName} {employee.lastName}</li>
-                ))}
-            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {currentEmployees.map(employee => (
+                        <tr key={employee.id}>
+                            <td>{employee.firstName}</td>
+                            <td>{employee.lastName}</td>
+                            <td>{employee.age}</td>
+                            <td>{employee.email}</td>
+                            <td>{employee.phone}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
             <div className="pagination">
                 {Array.from({ length: totalPages }, (_, index) => (
                     <button
